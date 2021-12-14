@@ -9,14 +9,14 @@ namespace fedb {
     class Field {
         public:
             Field();
-            Field(std::string, std::string);
-            Field(Field &);
+            Field(std::string&, std::string&);
+            Field(Field&);
             ~Field();
 
-            void key(std::string);
             std::string key() const;
-            void val(std::string);
+            void key(std::string&);
             std::string val() const;
+            void val(std::string&);
 
             std::string str() const;
             std::string json() const;
